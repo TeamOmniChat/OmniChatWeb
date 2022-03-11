@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./views/Home";
 import Login from "./views/Login";
+import Reg from "./views/register";
 
 export default function Router() {
   return (
@@ -15,6 +16,7 @@ export default function Router() {
           </Route>
           <Route element={<Home />} index />
         </Route>
+          <Route element={<Reg />} path="/auth/reg" />
       </Routes>
     </BrowserRouter>
   );

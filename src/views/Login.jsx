@@ -1,18 +1,16 @@
-import React from "react";
+import { LockOutlinedIcon } from "@mui/icons-material";
 import {
-  Container,
-  Card,
-  Box,
   Avatar,
-  Typography,
-  TextField,
-  FormControlLabel,
-  Checkbox,
+  Box,
   Button,
+  Checkbox,
+  Container,
+  FormControlLabel,
   Grid,
   Link,
+  TextField,
+  Typography,
 } from "@mui/material";
-import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 
 // Modified from MUI templates
 export default function Login() {

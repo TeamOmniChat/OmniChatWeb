@@ -16,8 +16,8 @@ import { useNavigate } from "react-router-dom";
 const pages = [
   {
     text: "Home",
-    link: "/"
-  }
+    link: "/",
+  },
 ];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
@@ -86,7 +86,9 @@ const Navbar = () => {
             >
               {pages.map((page) => (
                 <MenuItem key={page.text} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center" onClick={() => navigate(page.link)}>{page.text}</Typography>
+                  <Typography textAlign="center" onClick={() => navigate(page.link)}>
+                    {page.text}
+                  </Typography>
                 </MenuItem>
               ))}
             </Menu>
@@ -103,7 +105,10 @@ const Navbar = () => {
             {pages.map((page) => (
               <Button
                 key={page.text}
-                onClick={() => {handleCloseNavMenu(); navigate(page.link)}}
+                onClick={() => {
+                  handleCloseNavMenu();
+                  navigate(page.link);
+                }}
                 sx={{ my: 2, color: "white", display: "block" }}
               >
                 {page.text}

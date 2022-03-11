@@ -63,14 +63,13 @@ export const themeOptions = {
       styleOverrides: {
         root: {
           textTransform: 'capitalize',
-        },
-        contained: {
           boxShadow: 'none',
           '&:hover': {
             boxShadow: 'none',
           },
           '&:active, &:focus, :target': {
-            boxShadow: '0 0 0 2px #303030, 0 0 0 4px #6366f1',
+            boxShadow: '0 0 0 2px #121212, 0 0 0 4px #6366f1',
+            borderColor: '#121212'
           },
         },
       }

@@ -8,7 +8,7 @@ import { themeOptions as light } from "./themes/light";
 function App() {
   const isDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
   return (
-    <ThemeProvider theme={createTheme(isDark ? dark : light)}>
+    <ThemeProvider theme={createTheme(!isDark ? dark : light)}>
       <CssBaseline />
       <Router />
     </ThemeProvider>

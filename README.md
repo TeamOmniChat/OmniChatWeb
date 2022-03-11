@@ -7,15 +7,11 @@ An online instant messaging web app built with OmniChat, React.js and MUI.
 Install NPM packages:
 
 ```bash
-$ npm install
-# or
-$ yarn
+pnpm install
 ```
 
 Start the development server:
 
 ```bash
-$ npm run start
-# or
-$ yarn start
+pnpm run start
 ```
